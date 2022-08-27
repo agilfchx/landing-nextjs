@@ -1,4 +1,4 @@
-import swr from 'swr';
+import useSWR from 'swr';
 import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from '../components/Navbar';
@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar';
 const fetcher = (url) => fetch(url).then((r) => r.json());
 
 export default function Home() {
-  const { data, error } = swr('/api/random', fetcher);
+  const { data, error } = useSWR('/api/restaurant', fetcher);
   if (error) return <div>Failed to load</div>;
   if (!data) {
     return <div>Loading...</div>;
