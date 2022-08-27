@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Poppins&display=swap');
+
 html,
 body {
+  background: #212226;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Poppins;
+  color: white;
 }
 
 a {
@@ -15,12 +18,286 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+/* ------------------------------------------------------ */
+
+/* Navbar Section */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1d1e21;
+  color: white;
+  padding: 0 1.5rem;
+  height: 70px;
+  font-family: DynaPuff;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 15px;
+}
+
+.title span {
+  color: #0aa78a;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  color: white;
+  padding: 1rem;
+  position: relative;
+  margin: 15px;
+  opacity: 0.9;
+}
+
+.navbar-links li a:hover {
+  opacity: 1;
+}
+
+.navbar-links li a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #0aa78a;
+  transition: all 0.3s;
+}
+
+.navbar-links li a:hover::before {
+  width: 100%;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+/* ------------------------------------------------------ */
+
+/* Hero Section */
+.hero {
+  width: 90%;
+  height: 100%;
+  max-width: 1300px;
+  margin: 3rem auto;
+  display: flex;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: DynaPuff;
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+}
+
+.hero p {
+  font-size: 1.4rem;
+  max-width: 65%;
+}
+
+.btn {
+  width: 220px;
+  height: 45px;
+  border: none;
+  background: #fff;
+  color: #212226;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: 0.3s;
+  margin-bottom: 3rem;
+}
+
+.btn:hover {
+  background: #0aa78a;
+  color: #fff;
+}
+
+/* ------------------------------------------------------ */
+
+/* Card Section */
+.card-container {
+  width: 80%;
+  padding: 0 2rem 3rem;
+  background-color: #212226;
+  position: relative;
+  margin: auto;
+}
+
+.card__title {
+  padding: 2rem 0 0.5rem 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.card__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.card {
+  max-width: 300px;
+  height: 31rem;
+  margin: 6px;
+  border-radius: 3px;
+  background-color: white;
+  color: black;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  transition: 0.3s ease-in-out;
+}
+
+.card__desc {
+  padding: 1px 10px;
+}
+
+.card__image {
+  position: relative;
+}
+
+.image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 3px 3px 0 0;
+}
+
+.location {
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  color: black;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0 3px 3px 0;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.card__desc {
+  margin: 10px;
+}
+
+.card__desc h1 {
+  margin: 0;
+  padding: 5px 0;
+  font-family: DynaPuff;
+}
+
+.card__desc h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.card__desc p {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Footer Section */
+.footer {
+  width: 100%;
+  text-align: center;
+  background-color: #1d1e21;
+  padding: 5px 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .card__desc p {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.5;
   }
-  body {
-    color: white;
-    background: black;
+}
+
+@media (max-width: 768px) {
+  /* NAVBAR RESPONSIVE */
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-links.open {
+    display: block;
+  }
+
+  .navbar-links ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #555;
+    width: 100%;
+    height: 28%;
+    padding: 0;
+  }
+
+  .navbar-links li {
+    margin-top: 5px;
+    padding: 2rem 0;
+  }
+
+  .navbar-links li a::before {
+    display: none;
+  }
+  .navbar-links li:hover {
+    background-color: #666;
+  }
+
+  .navbar-toggle {
+    display: flex;
+    width: 50px;
+    height: 58px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .hamburger {
+    position: relative;
+    width: 32px;
+    height: 2px;
+    background: white;
+  }
+
+  /* CARD RESPONSIVE */
+  .card {
+    max-width: 400px;
+    height: 32rem;
+    margin: 6px;
+    border-radius: 3px;
+    background-color: white;
+    color: black;
+  }
+  .card__desc p {
+    margin: 0;
+    font-size: 1.15rem;
+    line-height: 1.5;
   }
 }
