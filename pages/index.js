@@ -71,3 +71,7 @@ export async function getServerSideProps() {
     console.error(err);
   }
 }
+
+// getServerSideProps
+//   .then(() => console.log('fetched'))
+//   .catch(() => console.log('error'));
