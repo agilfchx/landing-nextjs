@@ -84,6 +84,29 @@ a {
 }
 
 /* ------------------------------------------------------ */
+/* About */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+.about_container {
+  margin: 0;
+  padding: 5rem;
+}
+
+.about h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-size: 1.3rem;
+  max-width: 65%;
+}
 
 /* Hero Section */
 .hero {
@@ -138,6 +161,7 @@ a {
   background-color: #212226;
   position: relative;
   margin: auto;
+  cursor: pointer;
 }
 
 .card__title {
@@ -214,6 +238,65 @@ a {
 }
 
 .card__desc p {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Card Menu */
+.menu__title {
+  padding: 2rem 0 0.5rem 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: DynaPuff;
+}
+
+.cardmenu-container {
+  width: 40%;
+  padding: 0 2rem 3rem;
+  background-color: #212226;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.cardmenu {
+  max-width: 300px;
+  height: 21.5rem;
+  margin: 6px;
+  border-radius: 3px;
+  background-color: white;
+  color: black;
+}
+
+.cardmenu:hover {
+  transform: scale(1.03);
+  transition: 0.3s ease-in-out;
+}
+
+.cardmenu__desc {
+  margin: 19.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardmenu__desc h1 {
+  margin: 0;
+  padding: 5px 0;
+  font-size: 20px;
+  font-family: DynaPuff;
+}
+
+.cardmenu__desc p {
   margin: 0;
   font-size: 1.1rem;
   line-height: 1.5;
@@ -301,3 +384,5 @@ a {
     line-height: 1.5;
   }
 }
+
+/* --------------------------------------------------- */

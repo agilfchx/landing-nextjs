@@ -1,29 +1,14 @@
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
 import Image from 'next/image';
 import Link from 'next/link';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 
-export default function Home({ data }) {
+export default function Favorite({ data }) {
   return (
-    <div className="container">
+    <>
       <Navbar />
-      <section className="hero" id="home">
-        <div>
-          <h1>Hunger Apps</h1>
-          <h2>Come to save your stomach</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A in
-            voluptatibus beatae nobis amet eos sint iusto culpa minima optio
-            reiciendis maiores pariatur, hic laboriosam, velit totam! Alias,
-            labore sapiente.
-          </p>
-          <button className="btn">
-            <Link href="#favorite">Explore Now</Link>
-          </button>
-        </div>
-      </section>
       <section className="card-container" id="favorite">
-        <h1 className="card__title">Explore Warung Makan</h1>
+        <h1 className="card__title">Warung Makan Ter-favorite</h1>
         <div className="card__container">
           {data?.map((resto) => (
             <Link href={`/favorite/${resto.noResto}`} key={resto.noResto}>
@@ -49,7 +34,7 @@ export default function Home({ data }) {
         </div>
       </section>
       <Footer />
-    </div>
+    </>
   );
 }
 
@@ -66,7 +51,3 @@ export async function getServerSideProps() {
     console.error(err);
   }
 }
-
-// getServerSideProps
-//   .then(() => console.log('fetched'))
-//   .catch(() => console.log('error'));

@@ -7,6 +7,22 @@ export const data = [
     tag: 'Bandung',
     nameResto: 'AA Bistik',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, modi. Dolores omnis sed hic sit beatae dignissimos tenetur quasi adipisci?',
+    menu: [
+      {
+        noMenu: 1,
+        nameMenu: 'Bistik',
+        price: 21000,
+        image:
+          'https://assets-pergikuliner.com/GzIPu_tJdh-3igwXgqwRg7RAGUk=/385x290/smart/https://assets-pergikuliner.com/uploads/image/picture/2308203/picture-1632279313.jpg',
+      },
+      {
+        noMenu: 2,
+        nameMenu: 'Nasi Goreng Bistik',
+        price: 20000,
+        image:
+          'https://assets-pergikuliner.com/1vqK_NQCPX8jLyRsnvIM-2Vbfw4=/385x290/smart/https://assets-pergikuliner.com/uploads/image/picture/2308205/picture-1632279314.jpg',
+      },
+    ],
   },
   {
     noResto: 2,
@@ -16,7 +32,17 @@ export const data = [
     tag: 'Bandung',
     nameResto: 'Warung Nasi SPG',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, modi. Dolores omnis sed hic sit beatae dignissimos tenetur quasi adipisci?',
+    menu: [
+      {
+        noMenu: 1,
+        nameMenu: 'Nasi Ayam Goreng Serundeng',
+        price: 29500,
+        image:
+          'https://assets-pergikuliner.com/2r4RoRzm4A4PBajCDggdpL2i8As=/385x290/smart/https://assets-pergikuliner.com/uploads/image/picture/2318803/picture-1633421735.jpg',
+      },
+    ],
   },
+
   {
     noResto: 3,
     rating: 4.7,
@@ -25,6 +51,15 @@ export const data = [
     tag: 'Bandung',
     nameResto: 'Shawaregna',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, modi. Dolores omnis sed hic sit beatae dignissimos tenetur quasi adipisci?',
+    menu: [
+      {
+        noMenu: 1,
+        nameMenu: 'All You Can EAT (AYCE)',
+        price: 66000,
+        image:
+          'https://assets-pergikuliner.com/bLTwPt5yuYZ2EEOscVM5sw5ntEs=/385x290/smart/https://assets-pergikuliner.com/uploads/image/picture/1849089/picture-1581931434.jpg',
+      },
+    ],
   },
   {
     noResto: 4,
@@ -34,6 +69,22 @@ export const data = [
     tag: 'Bandung',
     nameResto: 'Gyumbox',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, modi. Dolores omnis sed hic sit beatae dignissimos tenetur quasi adipisci?',
+    menu: [
+      {
+        noMenu: 1,
+        nameMenu: 'Sei Sapi',
+        price: 32000,
+        image:
+          'https://assets-pergikuliner.com/dhLDI2L-mU9gWDkHDfvAmSWCGhI=/312x0/smart/https://assets-pergikuliner.com/uploads/image/picture/2596549/picture-1660811809.JPG',
+      },
+      {
+        noMenu: 2,
+        nameMenu: 'Sei Ayam',
+        price: 28000,
+        image:
+          'https://assets-pergikuliner.com/-o82zSKets9PzJ64BxDlqW0TSXg=/312x0/smart/https://assets-pergikuliner.com/uploads/image/picture/2623098/picture-1662485557.jpg',
+      },
+    ],
   },
   {
     noResto: 5,
