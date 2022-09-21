@@ -93,7 +93,7 @@ a {
 }
 
 .about_container {
-  margin: 0;
+  margin: 1.5rem 0;
   padding: 5rem;
 }
 
@@ -276,10 +276,10 @@ a {
   color: black;
 }
 
-.cardmenu:hover {
+/* .cardmenu:hover {
   transform: scale(1.03);
   transition: 0.3s ease-in-out;
-}
+} */
 
 .cardmenu__desc {
   margin: 19.5px;
@@ -308,6 +308,55 @@ a {
   text-align: center;
   background-color: #1d1e21;
   padding: 5px 0;
+}
+
+/* Counter Item */
+.counterItem {
+  margin-top: 15px;
+  height: 50px;
+  width: 150px;
+  background-color: #0aa78a;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.operation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.trash {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.decr {
+  cursor: pointer;
+}
+.incr {
+  cursor: pointer;
+}
+
+.trash:hover {
+  color: #1d1e21;
+}
+
+.decr:hover {
+  color: #1d1e21;
+}
+
+.incr:hover {
+  color: #1d1e21;
+}
+
+.num {
+  margin: 3px;
 }
 
 /* RESPONSIVE */

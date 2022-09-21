@@ -1,5 +1,6 @@
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
+import Form from '../../components/Form/Form';
 
 export default function About() {
   return (
@@ -7,13 +8,9 @@ export default function About() {
       <Navbar title=" | About" />
       <section className="about">
         <div className="about_container">
-          <h1>About Us</h1>
-          <p>
-            Hunger Apps merupakan sebuah website yang dimana akan memberikan
-            sebuah rekomendasi seputar warung makan yang sangat disukai
-            dikalangan masyarakat karena rasa dan harganya yang masih terjangkau
-            aman
-          </p>
+          <h1>Ingin mengetahui kami lebih lanjut?</h1>
+          <p>Isi form dibawah ini dan kami akan mengabari anda</p>
+          <Form />
         </div>
       </section>
       {/* <Footer /> */}

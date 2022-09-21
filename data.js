@@ -12,6 +12,7 @@ export const data = [
         noMenu: 1,
         nameMenu: 'Bistik',
         price: 21000,
+        counterVal: 0,
         image:
           'https://assets-pergikuliner.com/GzIPu_tJdh-3igwXgqwRg7RAGUk=/385x290/smart/https://assets-pergikuliner.com/uploads/image/picture/2308203/picture-1632279313.jpg',
       },
@@ -19,6 +20,7 @@ export const data = [
         noMenu: 2,
         nameMenu: 'Nasi Goreng Bistik',
         price: 20000,
+        counterVal: 0,
         image:
           'https://assets-pergikuliner.com/1vqK_NQCPX8jLyRsnvIM-2Vbfw4=/385x290/smart/https://assets-pergikuliner.com/uploads/image/picture/2308205/picture-1632279314.jpg',
       },
@@ -39,6 +41,7 @@ export const data = [
         price: 29500,
         image:
           'https://assets-pergikuliner.com/2r4RoRzm4A4PBajCDggdpL2i8As=/385x290/smart/https://assets-pergikuliner.com/uploads/image/picture/2318803/picture-1633421735.jpg',
+        counterVal: 0,
       },
     ],
   },
@@ -58,6 +61,7 @@ export const data = [
         price: 66000,
         image:
           'https://assets-pergikuliner.com/bLTwPt5yuYZ2EEOscVM5sw5ntEs=/385x290/smart/https://assets-pergikuliner.com/uploads/image/picture/1849089/picture-1581931434.jpg',
+        counterVal: 0,
       },
     ],
   },
@@ -76,6 +80,7 @@ export const data = [
         price: 32000,
         image:
           'https://assets-pergikuliner.com/dhLDI2L-mU9gWDkHDfvAmSWCGhI=/312x0/smart/https://assets-pergikuliner.com/uploads/image/picture/2596549/picture-1660811809.JPG',
+        counterVal: 0,
       },
       {
         noMenu: 2,
@@ -83,6 +88,7 @@ export const data = [
         price: 28000,
         image:
           'https://assets-pergikuliner.com/-o82zSKets9PzJ64BxDlqW0TSXg=/312x0/smart/https://assets-pergikuliner.com/uploads/image/picture/2623098/picture-1662485557.jpg',
+        counterVal: 0,
       },
     ],
   },
